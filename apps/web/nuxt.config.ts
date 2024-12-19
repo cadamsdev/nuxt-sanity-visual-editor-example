@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   sanity: {
     projectId: 'v39h2x7o',
     dataset: 'production',
-    minimal: true,
-  }
+    apiVersion: '2021-03-25',
+    visualEditing: {
+      token: process.env.NUXT_SANITY_VISUAL_EDITING_TOKEN,
+      studioUrl: 'http://localhost:3333',
+    },
+  },
 });
