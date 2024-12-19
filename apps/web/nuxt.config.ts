@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   sanity: {
     projectId: 'v39h2x7o',
     dataset: 'production',
-    apiVersion: '2021-03-25',
+    apiVersion: '2021-03-25', // required
     visualEditing: {
       token: process.env.NUXT_SANITY_VISUAL_EDITING_TOKEN,
       studioUrl: 'http://localhost:3333',
