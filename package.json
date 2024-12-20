@@ -2,9 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev:cms\" \"npm run dev:web\"",
-    "dev:web": "npm run dev --workspace=web",
-    "dev:cms": "npm run dev --workspace=cms"
+    "dev": "concurrently \"npm run cms:dev\" \"npm run web:dev\"",
+    "web:dev": "npm run dev --workspace=web",
+    "cms:dev": "npm run dev --workspace=cms"
   },
   "workspaces": [
     "apps/**"
